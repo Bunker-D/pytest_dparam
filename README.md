@@ -10,7 +10,11 @@ Additionally, test cases covering the same topic can be bundled under the same n
 
 ## Syntax
 
-`d_parametrize` takes as its input a dictionary, whose items are the different test cases or sets of test cases. As an example:
+`d_parametrize` takes as its input a dictionary, whose entries are the different test cases or sets of test cases (named through the dictionary keys).
+
+Every test case is defined with a dictionary of value assignments.
+
+For example:
 
 ```python
 from pytest_dparam import d_parametrize
