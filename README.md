@@ -111,6 +111,25 @@ def test_square(input: int, expected: int):
     assert square(input) == expected
 ```
 
+### With test classes, mocks, etc.
+
+The test function might be required to use additional arguments to the parametrized ones, such as a reference to *self* when in a test class, or `monkeypatch: pytest.MonkeyPatch` for mocking.
+As when using `pytest.mark.parametrize`, those are simply ignored when using `d_parametrize`:
+```python
+class Test_class:
+    @d_parametrize(
+        {
+            "trivial_case": [
+                {"input": 1, "expected": 1},
+            ],
+            # ...
+        }
+    )
+    def test_fun(input: int, expected: int, monkeypatch: pytest.MonkeyPatch):
+        # ...
+        assert actual == expected
+```
+
 
 ## Under the hood
 
