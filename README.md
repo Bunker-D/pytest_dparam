@@ -8,6 +8,12 @@ Test cases are configured through a dictionary so that:
 
 Additionally, test cases covering the same topic can be bundled under the same name.
 
+## Install
+
+```
+pip install pytest-dparam
+```
+
 ## Syntax
 
 `d_parametrize` takes as its input a dictionary, whose entries are the different test cases or sets of test cases (named through the dictionary keys).
