@@ -17,7 +17,7 @@ keywords = ["pytest", "tests", "testing", "parametrize", "parametrized"]
 
 
 dependencies = ["pytest"]
-optional-dependencies = { dev = ["black-with-tabs"] }
+optional-dependencies = { dev = ["black-with-tabs", "build"] }
 
 
 [project.urls]
