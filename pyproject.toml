@@ -3,7 +3,7 @@ name = "pytest_dparam"
 version = "1.0.0"
 authors = [{ name = "Bunker D", email = "contact@bunkerd.fr" }]
 description = "A more readable alternative to @pytest.mark.parametrize."
-reamde = "README.md"
+readme = "README.md"
 
 classifiers = [
 	"Development Status :: 6 - Mature",
@@ -17,7 +17,7 @@ keywords = ["pytest", "tests", "testing", "parametrize", "parametrized"]
 
 
 dependencies = ["pytest"]
-optional-dependencies = [{ dev = "black-with-tabs" }]
+optional-dependencies = { dev = ["black-with-tabs"] }
 
 
 [project.urls]
@@ -27,5 +27,5 @@ Documentation = "https://github.com/Bunker-D/pytest_dparam/blob/main/README.md"
 
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
