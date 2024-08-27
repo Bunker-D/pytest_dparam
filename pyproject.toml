@@ -1,0 +1,31 @@
+[project]
+name = "pytest_dparam"
+version = "1.0.0"
+authors = [{ name = "Bunker D", email = "contact@bunkerd.fr" }]
+description = "A more readable alternative to @pytest.mark.parametrize."
+reamde = "README.md"
+
+classifiers = [
+	"Development Status :: 6 - Mature",
+	"License :: OSI Approved :: MIT License",
+	"Framework :: Pytest",
+	"Intended Audience :: Developers",
+	"Topic :: Software Development :: Testing :: Unit",
+	"Programming Language :: Python :: 3",
+]
+keywords = ["pytest", "tests", "testing", "parametrize", "parametrized"]
+
+
+dependencies = ["pytest"]
+optional-dependencies = [{ dev = "black-with-tabs" }]
+
+
+[project.urls]
+Homepage = "https://github.com/Bunker-D/pytest_dparam"
+Repository = "https://github.com/Bunker-D/pytest_dparam"
+Documentation = "https://github.com/Bunker-D/pytest_dparam/blob/main/README.md"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
